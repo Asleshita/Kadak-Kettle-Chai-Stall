@@ -1,0 +1,1016 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Kadak Kettle Chai Stall</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Kadak chai poured from a height, bun maska and samosas on Station Road. Mix your own chai and order on WhatsApp.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rozha+One&family=Yatra+One&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;600;700;800&display=swap">
+<style>
+/* Layout: a chai stall painted like the back of an Indian truck. Sunbursts, zigzag edges, hanging
+   bells and shadowed hand-lettering; every panel framed in stacked painted stripes. One committed look. */
+:root {
+  --marigold: #FFC21A;
+  --marigold-deep: #F2AE00;
+  --peacock: #0B5E5F;
+  --peacock-deep: #073F40;
+  --chilli: #E2231A;
+  --rani: #E5197E;
+  --parrot: #3DAA3A;
+  --sky: #1FA6D9;
+  --ink: #1F1410;
+  --ink-soft: #5C4638;
+  --paper: #FFF9EC;
+  --clay: #C8643B;
+
+  --font-display: "Rozha One", "Georgia", serif;
+  --font-hindi: "Yatra One", "Rozha One", serif;
+  --font-body: "Mukta", "Segoe UI", system-ui, sans-serif;
+  color-scheme: light;
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
+body {
+  background-color: var(--marigold);
+  background-image: radial-gradient(circle at 12px 12px, rgba(242,174,0,.75) 2.2px, transparent 2.8px);
+  background-size: 24px 24px;
+  color: var(--ink); font-family: var(--font-body); font-size: 1.06rem; line-height: 1.55; -webkit-font-smoothing: antialiased;
+}
+h1, h2, h3 { margin: 0; text-wrap: balance; font-family: var(--font-display); font-weight: 400; line-height: 1.05; }
+p { margin: 0; }
+a { color: inherit; }
+button { font: inherit; color: inherit; }
+:focus-visible { outline: 3px solid var(--rani); outline-offset: 3px; border-radius: 6px; }
+.wrap { width: 100%; max-width: 1180px; margin-inline: auto; padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); }
+.hindi { font-family: var(--font-hindi); }
+.painted { color: var(--paper); text-shadow: 3px 3px 0 var(--chilli), 6px 6px 0 var(--ink); letter-spacing: .01em; }
+.painted-dark { color: var(--ink); text-shadow: 3px 3px 0 var(--paper), 5px 5px 0 var(--chilli); }
+.eyebrow { font-weight: 800; text-transform: uppercase; letter-spacing: .14em; font-size: .8rem; }
+
+/* painted frame: stacked stripes like a truck panel */
+.frame-paint {
+  border: 4px solid var(--ink); border-radius: 22px;
+  box-shadow: inset 0 0 0 5px var(--marigold), inset 0 0 0 9px var(--chilli), inset 0 0 0 13px var(--parrot), 6px 6px 0 var(--ink);
+}
+.corner { position: absolute; width: 38px; height: 38px; z-index: 2; }
+.corner svg { width: 100%; height: 100%; }
+.corner.tl { top: -14px; left: -14px; } .corner.tr { top: -14px; right: -14px; } .corner.bl { bottom: -14px; left: -14px; } .corner.br { bottom: -14px; right: -14px; }
+@media (prefers-reduced-motion: no-preference) { .corner svg { animation: spin 14s linear infinite; } @keyframes spin { to { transform: rotate(360deg); } } }
+
+/* zigzag + bells */
+.zig { height: 18px; background-color: var(--to); background-image: linear-gradient(135deg, var(--from) 50%, transparent 50%), linear-gradient(225deg, var(--from) 50%, transparent 50%); background-size: 22px 22px; background-repeat: repeat-x; }
+.bells { height: 30px; background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='88' height='30'%3E%3Cpath d='M0 2 H88' stroke='%231F1410' stroke-width='3'/%3E%3Cpath d='M3 2 H23 L13 22 Z' fill='%23E2231A' stroke='%231F1410' stroke-width='2' stroke-linejoin='round'/%3E%3Ccircle cx='13' cy='24' r='3' fill='%23FFC21A' stroke='%231F1410' stroke-width='1.5'/%3E%3Cpath d='M33 2 V8' stroke='%231F1410' stroke-width='2'/%3E%3Cpath d='M27 18 Q27 8 33 8 Q39 8 39 18 Z' fill='%23E8B33A' stroke='%231F1410' stroke-width='2' stroke-linejoin='round'/%3E%3Ccircle cx='33' cy='20' r='2.4' fill='%231F1410'/%3E%3Cpath d='M47 2 H67 L57 22 Z' fill='%233DAA3A' stroke='%231F1410' stroke-width='2' stroke-linejoin='round'/%3E%3Ccircle cx='57' cy='24' r='3' fill='%23E5197E' stroke='%231F1410' stroke-width='1.5'/%3E%3Cpath d='M77 2 V8' stroke='%231F1410' stroke-width='2'/%3E%3Cpath d='M71 18 Q71 8 77 8 Q83 8 83 18 Z' fill='%23E8B33A' stroke='%231F1410' stroke-width='2' stroke-linejoin='round'/%3E%3Ccircle cx='77' cy='20' r='2.4' fill='%231F1410'/%3E%3C/svg%3E") repeat-x 0 0 / 88px 30px; }
+@media (prefers-reduced-motion: no-preference) { .bells.swing { animation: jingle 2.6s ease-in-out infinite; } @keyframes jingle { 0%, 100% { background-position: 0 0; } 50% { background-position: 3px 1px; } } }
+
+.btn {
+  display: inline-flex; align-items: center; justify-content: center; gap: .5rem; min-height: 50px; padding: 0 1.4rem;
+  border-radius: 14px; border: 3px solid var(--ink); background: var(--chilli); color: var(--paper);
+  font-weight: 800; font-size: 1.02rem; text-decoration: none; cursor: pointer; box-shadow: 4px 4px 0 var(--ink);
+  transition: transform .12s ease, box-shadow .12s ease;
+}
+.btn:hover { transform: translate(-2px, -2px); box-shadow: 6px 6px 0 var(--ink); }
+.btn:active { transform: translate(2px, 2px); box-shadow: 2px 2px 0 var(--ink); }
+.btn-paper { background: var(--paper); color: var(--ink); }
+.btn-green { background: var(--parrot); color: var(--paper); }
+.btn-yellow { background: var(--marigold); color: var(--ink); }
+.btn.small { min-height: 40px; padding: 0 .95rem; font-size: .92rem; box-shadow: 3px 3px 0 var(--ink); }
+.btn:disabled { opacity: .45; cursor: not-allowed; transform: none; box-shadow: 3px 3px 0 var(--ink); }
+@media (prefers-reduced-motion: reduce) { .btn { transition: none; } .btn:hover, .btn:active { transform: none; } }
+.back { display: inline-flex; align-items: center; gap: .4rem; font-weight: 800; text-decoration: none; padding: .45rem 1rem; border-radius: 12px; background: var(--paper); border: 3px solid var(--ink); box-shadow: 3px 3px 0 var(--ink); }
+.back:hover { background: var(--marigold); }
+
+/* ---------- Intro ---------- */
+.intro { position: fixed; inset: 0; z-index: 70; overflow: hidden; display: grid; place-items: center;
+  background: repeating-conic-gradient(from 0deg at 50% 45%, var(--peacock) 0deg 9deg, #0E7172 9deg 18deg);
+  padding: max(16px, env(safe-area-inset-top, 0px)) max(16px, env(safe-area-inset-right, 0px)) max(16px, env(safe-area-inset-bottom, 0px)) max(16px, env(safe-area-inset-left, 0px));
+  transition: opacity .55s ease, transform .55s ease; }
+.intro.leaving { opacity: 0; transform: scale(1.06); pointer-events: none; }
+.intro .bells { position: absolute; top: env(safe-area-inset-top, 0px); left: 0; right: 0; }
+.hang { position: relative; display: grid; justify-items: center; width: min(560px, 100%); transform-origin: 50% -120px; }
+.chains { display: flex; justify-content: space-between; width: 62%; height: 54px; }
+.chains i { width: 4px; background: repeating-linear-gradient(var(--marigold) 0 6px, var(--ink) 6px 8px); border-radius: 2px; }
+.signboard { position: relative; width: 100%; background: var(--rani); padding: clamp(1.4rem, 4vw, 2.2rem) clamp(1.2rem, 4vw, 2.4rem) clamp(1.3rem, 4vw, 2rem); display: grid; justify-items: center; gap: .55rem; text-align: center; }
+.signboard .hindi { font-size: clamp(1.8rem, 6vw, 2.6rem); color: var(--marigold); line-height: 1; text-shadow: 2px 2px 0 var(--ink); }
+.signboard h1 { font-size: clamp(2.8rem, 10vw, 4.6rem); }
+.signboard .sub { font-weight: 700; color: var(--paper); letter-spacing: .08em; text-transform: uppercase; font-size: .86rem; }
+.intro-kettle { width: clamp(90px, 18vw, 130px); position: absolute; right: -6%; bottom: -14%; transform: rotate(-16deg); }
+.intro-cup { width: clamp(70px, 13vw, 96px); position: absolute; left: -4%; bottom: -16%; }
+.intro .btn { margin-top: 2.2rem; }
+.btn.ready { animation: none; }
+@media (prefers-reduced-motion: no-preference) {
+  .hang { animation: swingIn 1.6s cubic-bezier(.3,1.4,.5,1) both; }
+  @keyframes swingIn { 0% { transform: translateY(-120vh) rotate(-14deg); } 55% { transform: translateY(0) rotate(7deg); } 75% { transform: rotate(-3deg); } 100% { transform: none; } }
+  .intro .btn { animation: fadeUp .5s ease 1.3s both; }
+  @keyframes fadeUp { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } }
+  .btn.ready { animation: wiggle 1.8s ease-in-out infinite; }
+  @keyframes wiggle { 0%, 70%, 100% { transform: rotate(0); } 75% { transform: rotate(-3deg) scale(1.04); } 85% { transform: rotate(3deg) scale(1.04); } }
+  .intro-kettle { animation: bob 2.2s ease-in-out infinite; }
+  @keyframes bob { 50% { transform: rotate(-22deg) translateY(-6px); } }
+}
+@media (max-width: 520px) { .intro-kettle { right: -2%; bottom: -18%; } .intro-cup { left: 0; bottom: -18%; } }
+
+/* ---------- Header ---------- */
+.site-head { position: sticky; top: env(safe-area-inset-top, 0px); z-index: 40; }
+.head-bar { background: var(--peacock); color: var(--paper); border-bottom: 3px solid var(--ink); }
+.head-in { display: flex; align-items: center; flex-wrap: wrap; gap: .6rem 1.2rem; padding-block: .55rem; }
+.brand { display: flex; align-items: center; gap: .5rem; text-decoration: none; }
+.brand-cup { width: 44px; height: 44px; flex-shrink: 0; }
+.brand-cup svg { width: 100%; height: 100%; }
+.brand b { display: block; font-family: var(--font-display); font-weight: 400; font-size: 1.5rem; line-height: 1; color: var(--marigold); text-shadow: 2px 2px 0 var(--ink); }
+.brand small { display: block; font-family: var(--font-hindi); color: var(--paper); font-size: .95rem; line-height: 1.1; }
+.nav { display: flex; gap: .3rem; margin-left: auto; }
+.nav a { text-decoration: none; font-weight: 700; padding: .4rem .85rem; border-radius: 10px; border: 2px solid transparent; white-space: nowrap; }
+.nav a:hover { border-color: var(--marigold); }
+.nav a[aria-current="page"] { background: var(--marigold); color: var(--ink); border-color: var(--ink); }
+.cart-btn { position: relative; }
+.badge { display: inline-grid; place-items: center; min-width: 24px; height: 24px; padding: 0 6px; border-radius: 999px; background: var(--marigold); color: var(--ink); border: 2px solid var(--ink); font-size: .8rem; font-weight: 800; font-variant-numeric: tabular-nums; }
+@media (prefers-reduced-motion: no-preference) { .badge.bump { animation: bump .45s cubic-bezier(.3,1.8,.5,1); } @keyframes bump { 40% { transform: scale(1.5); } } }
+@media (max-width: 820px) {
+  .head-in > .btn { margin-left: auto; }
+  .nav { order: 3; width: 100%; margin-left: 0; display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: .25rem; }
+  .nav a { text-align: center; padding: .35rem .15rem; font-size: .9rem; border-color: rgba(255,249,236,.35); }
+}
+
+/* ---------- Screens ---------- */
+.screen { position: relative; overflow-x: clip; }
+@media (prefers-reduced-motion: no-preference) { .screen:not([hidden]) { animation: screenIn .45s ease both; } @keyframes screenIn { from { opacity: 0; transform: translateY(14px); } to { opacity: 1; transform: none; } } }
+.sec { padding-block: clamp(2.5rem, 6vw, 4.5rem); }
+.band-peacock { background: var(--peacock); color: var(--paper); }
+.band-rani { background: var(--rani); color: var(--paper); }
+.band-ink { background: var(--ink); color: var(--paper); }
+.page-top { display: flex; flex-wrap: wrap; justify-content: space-between; align-items: center; gap: .75rem; margin-bottom: 1.4rem; }
+.title { font-size: clamp(2.4rem, 6vw, 4.2rem); }
+.lede { font-size: 1.12rem; max-width: 56ch; font-weight: 500; }
+
+/* home hero */
+.hero-in { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: clamp(1.5rem, 4vw, 3.5rem); align-items: center; }
+.hero-copy { display: grid; gap: 1.1rem; min-width: 0; }
+.hero-copy h1 { font-size: clamp(2.6rem, 6.4vw, 5rem); }
+.hero-copy .hindi-line { font-family: var(--font-hindi); font-size: clamp(1.4rem, 3vw, 1.9rem); color: var(--chilli); line-height: 1.1; }
+.ctas { display: flex; flex-wrap: wrap; gap: .8rem; }
+.facts { display: flex; flex-wrap: wrap; gap: .5rem; }
+.facts span { background: var(--paper); border: 2.5px solid var(--ink); border-radius: 999px; padding: .2rem .8rem; font-weight: 700; font-size: .92rem; font-variant-numeric: tabular-nums; }
+.status::before { content: ""; display: inline-block; width: 9px; height: 9px; border-radius: 50%; background: var(--ink-soft); margin-right: .45rem; vertical-align: 1px; }
+.status.on::before { background: var(--parrot); box-shadow: 0 0 0 3px rgba(61,170,58,.3); }
+.stage { position: relative; background: repeating-conic-gradient(from 0deg at 62% 82%, var(--peacock) 0deg 8deg, #0E7172 8deg 16deg); padding: 1rem; }
+.pour { width: 100%; height: auto; display: block; overflow: visible; }
+.stage .sign-ok { position: absolute; left: 50%; bottom: -26px; transform: translateX(-50%) rotate(-2deg); z-index: 3; }
+.sign-ok { display: inline-flex; align-items: center; gap: .55rem; background: var(--marigold); border: 3px solid var(--ink); border-radius: 10px; padding: .35rem .9rem; box-shadow: 4px 4px 0 var(--ink); white-space: nowrap; }
+.sign-ok b { font-family: var(--font-display); font-weight: 400; font-size: 1.3rem; color: var(--chilli); letter-spacing: .04em; text-shadow: 1.5px 1.5px 0 var(--ink); }
+.sign-ok svg { width: 26px; height: 26px; }
+.pour .kettle-g { transform-box: view-box; }
+@media (prefers-reduced-motion: no-preference) {
+  .pour .lift { animation: lift 2.4s ease-in-out infinite; }
+  @keyframes lift { 0%, 100% { transform: translateY(0); } 50% { transform: translateY(-26px); } }
+  .pour .stream { animation: stretch 2.4s ease-in-out infinite; transform-origin: 332px 400px; transform-box: view-box; }
+  @keyframes stretch { 0%, 100% { transform: scaleY(1); } 50% { transform: scaleY(1.104); } }
+  .pour .flow { stroke-dasharray: 10 14; animation: flow .5s linear infinite; }
+  @keyframes flow { to { stroke-dashoffset: -24; } }
+  .pour .fill { animation: fillUp 6s ease-in-out infinite; }
+  @keyframes fillUp { 0% { transform: translateY(40px); } 80%, 100% { transform: translateY(0); } }
+  .pour .drop { animation: splash 1s ease-out infinite; transform-box: fill-box; transform-origin: 50% 100%; }
+  .pour .drop:nth-of-type(2) { animation-delay: .33s; } .pour .drop:nth-of-type(3) { animation-delay: .66s; }
+  @keyframes splash { 0% { transform: translate(0, 0) scale(.4); opacity: 0; } 30% { opacity: 1; } 100% { transform: translate(var(--dx), -26px) scale(1); opacity: 0; } }
+}
+.steam { opacity: .85; }
+@media (prefers-reduced-motion: no-preference) { .steam { animation: steamUp 2.4s ease-in-out infinite; animation-delay: var(--d, 0s); } @keyframes steamUp { 0% { transform: translateY(6px); opacity: 0; } 40% { opacity: .9; } 100% { transform: translateY(-10px); opacity: 0; } } }
+@media (max-width: 860px) { .hero-in { grid-template-columns: minmax(0, 1fr); } .stage { margin-bottom: 1.5rem; } }
+
+/* tiles */
+.tiles { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 1.2rem; }
+.tile { position: relative; display: grid; gap: .35rem; align-content: start; padding: 1.4rem 1.2rem 1.3rem; background: var(--paper); color: var(--ink); text-decoration: none; min-width: 0; transition: transform .2s ease; }
+.tile:nth-child(1) { background: var(--marigold); } .tile:nth-child(2) { background: var(--paper); } .tile:nth-child(3) { background: #FFD7E8; } .tile:nth-child(4) { background: #CDEFF9; }
+.tile:hover { transform: translateY(-6px) rotate(-1deg); }
+.tile-art { width: 86px; height: 86px; margin-bottom: .2rem; }
+.tile-art svg { width: 100%; height: 100%; }
+.tile b { font-family: var(--font-display); font-weight: 400; font-size: 1.55rem; line-height: 1.05; }
+.tile .hindi { color: var(--chilli); font-size: 1.05rem; }
+.tile .sub { font-weight: 500; font-size: .96rem; color: var(--ink-soft); }
+@media (max-width: 960px) { .tiles { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 420px) { .tile { padding: 1.1rem .95rem; } .tile b { font-size: 1.25rem; } .tile-art { width: 64px; height: 64px; } }
+@media (prefers-reduced-motion: reduce) { .tile { transition: none; } .tile:hover { transform: none; } }
+
+/* item cards (menu + favourites) */
+.items { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 1.4rem; }
+@media (max-width: 960px) { .items { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (max-width: 600px) { .items { grid-template-columns: minmax(0, 1fr); } }
+.item { position: relative; background: var(--paper); padding: 1.3rem 1.3rem 1.2rem; display: grid; grid-template-columns: 104px minmax(0, 1fr); gap: .3rem 1rem; align-items: start; }
+.item .pic { grid-row: span 3; width: 104px; height: 104px; border-radius: 50%; background: var(--peacock); border: 3px solid var(--ink); display: grid; place-items: center; }
+.item:nth-child(3n+2) .pic { background: var(--rani); } .item:nth-child(3n+3) .pic { background: var(--sky); }
+.item .pic svg { width: 88px; height: 88px; }
+.item h3 { font-size: 1.45rem; }
+.item .hindi { color: var(--chilli); font-size: 1rem; line-height: 1.1; }
+.item p { color: var(--ink-soft); font-size: .95rem; line-height: 1.45; }
+.item-foot { grid-column: 1 / -1; display: flex; align-items: center; justify-content: space-between; gap: .6rem; margin-top: .6rem; padding-top: .7rem; border-top: 2.5px dashed var(--ink); }
+.item-foot b { font-family: var(--font-display); font-weight: 400; font-size: 1.5rem; font-variant-numeric: tabular-nums; }
+.qty { display: inline-grid; grid-template-columns: 38px 2.4rem 38px; align-items: center; border: 3px solid var(--ink); border-radius: 12px; overflow: hidden; background: var(--paper); box-shadow: 3px 3px 0 var(--ink); }
+.qty button { border: 0; background: var(--marigold); min-height: 36px; font-weight: 800; font-size: 1.2rem; cursor: pointer; }
+.qty output { text-align: center; font-weight: 800; font-variant-numeric: tabular-nums; }
+.menu-head { display: flex; align-items: end; justify-content: space-between; flex-wrap: wrap; gap: .5rem 1rem; margin: 2.2rem 0 1.2rem; }
+.menu-head h2 { font-size: clamp(2rem, 4.6vw, 3rem); }
+.menu-head .hindi { font-size: 1.5rem; color: var(--chilli); }
+
+/* story */
+.story { display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, .8fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: center; }
+.story h2 { font-size: clamp(2.2rem, 5vw, 3.4rem); }
+.story-text { display: grid; gap: 1rem; max-width: 60ch; }
+.truck-back { position: relative; background: var(--marigold); color: var(--ink); padding: 2rem 1.5rem; text-align: center; display: grid; gap: .5rem; justify-items: center; }
+.truck-back .ok { font-family: var(--font-display); font-size: clamp(2.2rem, 6vw, 3.2rem); line-height: .95; color: var(--chilli); text-shadow: 2px 2px 0 var(--ink); }
+.truck-back .small { font-weight: 800; letter-spacing: .14em; text-transform: uppercase; font-size: .82rem; }
+.truck-back .eyes { display: flex; gap: .5rem; }
+.truck-back .eyes svg { width: 40px; height: 52px; }
+@media (max-width: 820px) { .story { grid-template-columns: minmax(0, 1fr); } }
+
+/* ---------- Mix your chai ---------- */
+.mixer { display: grid; grid-template-columns: minmax(0, .95fr) minmax(0, 1.05fr); gap: clamp(1.5rem, 4vw, 3rem); align-items: start; }
+@media (max-width: 880px) { .mixer { grid-template-columns: minmax(0, 1fr); } }
+.cup-stage { position: sticky; top: 120px; background: repeating-conic-gradient(from 0deg at 50% 62%, var(--peacock) 0deg 8deg, #0E7172 8deg 16deg); padding: 1.2rem 1rem 1.4rem; display: grid; justify-items: center; gap: .8rem; text-align: center; color: var(--paper); }
+@media (max-width: 880px) { .cup-stage { position: relative; top: 0; } }
+.mix-svg { width: min(340px, 100%); height: auto; overflow: visible; }
+.mix-svg .liquid { transition: fill .6s ease; }
+.mix-svg .k-tilt { transform-box: view-box; transform-origin: 96px 70px; transition: transform .35s ease; }
+.mix-svg.pouring .k-tilt { transform: rotate(24deg); }
+.mix-svg .pstream { opacity: 0; transition: opacity .2s; }
+.mix-svg.pouring .pstream { opacity: 1; }
+.mix-svg .spice { transform-box: fill-box; transform-origin: 50% 50%; }
+@media (prefers-reduced-motion: no-preference) {
+  .mix-svg .spice { animation: floaty 3s ease-in-out infinite; }
+  .mix-svg .spice.new { animation: dropIn .6s cubic-bezier(.3,1.5,.5,1) both, floaty 3s ease-in-out .6s infinite; }
+  @keyframes dropIn { from { transform: translateY(-80px) rotate(-60deg); opacity: 0; } to { transform: none; opacity: 1; } }
+  @keyframes floaty { 50% { transform: translateY(-3px) rotate(6deg); } }
+}
+.chai-name { font-family: var(--font-display); font-size: clamp(1.6rem, 3.4vw, 2.1rem); line-height: 1.08; color: var(--marigold); text-shadow: 2px 2px 0 var(--ink); }
+.chai-detail { font-weight: 600; color: var(--paper); }
+.controls { display: grid; gap: 1.1rem; }
+.ctrl { background: var(--paper); border: 3px solid var(--ink); border-radius: 18px; padding: 1rem 1.1rem; box-shadow: 5px 5px 0 var(--ink); display: grid; gap: .6rem; }
+.ctrl-h { display: flex; align-items: baseline; justify-content: space-between; gap: .6rem; }
+.ctrl-h b { font-family: var(--font-display); font-weight: 400; font-size: 1.35rem; }
+.ctrl-h .hindi { color: var(--chilli); }
+.opts { display: flex; flex-wrap: wrap; gap: .45rem; }
+.opt { position: relative; display: inline-flex; align-items: center; gap: .45rem; padding: .45rem .85rem; border-radius: 12px; border: 2.5px solid var(--ink); background: var(--paper); font-weight: 700; cursor: pointer; font-size: .95rem; }
+.opt input { position: absolute; opacity: 0; pointer-events: none; }
+.opt small { color: var(--ink-soft); font-weight: 600; }
+.opt svg { width: 26px; height: 26px; }
+.opt:has(input:checked) { background: var(--marigold); box-shadow: 3px 3px 0 var(--ink); }
+.opt:has(input:focus-visible) { outline: 3px solid var(--rani); outline-offset: 2px; }
+.spoons { display: flex; align-items: center; gap: .8rem; flex-wrap: wrap; }
+.spoon-row { display: flex; gap: .3rem; }
+.spoon-row i { width: 18px; height: 18px; border-radius: 4px; border: 2px solid var(--ink); background: var(--paper); transform: rotate(8deg); }
+.spoon-row i.on { background: #FFFFFF; box-shadow: inset -3px -3px 0 #E6DCC8; }
+.mix-buy { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .8rem; background: var(--ink); color: var(--paper); border-radius: 18px; padding: 1rem 1.1rem; }
+.mix-buy .price { font-family: var(--font-display); font-size: 2rem; color: var(--marigold); font-variant-numeric: tabular-nums; line-height: 1; }
+.mix-buy .qty { box-shadow: none; border-color: var(--paper); }
+.mix-buy .qty output { color: var(--ink); background: var(--paper); align-self: stretch; display: grid; place-items: center; }
+.toast { position: fixed; left: 50%; bottom: max(18px, env(safe-area-inset-bottom, 0px)); transform: translate(-50%, 140%); z-index: 60; background: var(--ink); color: var(--paper); border: 3px solid var(--marigold); border-radius: 14px; padding: .7rem 1rem; font-weight: 700; display: flex; align-items: center; gap: .8rem; transition: transform .35s cubic-bezier(.3,1.4,.5,1), opacity .25s, visibility .35s; max-width: calc(100% - 32px); opacity: 0; visibility: hidden; }
+.toast.show { transform: translate(-50%, 0); opacity: 1; visibility: visible; }
+.toast a { color: var(--marigold); font-weight: 800; white-space: nowrap; }
+
+/* ---------- Order ---------- */
+.order-grid { display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, .9fr); gap: 1.5rem; align-items: start; }
+@media (max-width: 880px) { .order-grid { grid-template-columns: minmax(0, 1fr); } }
+.bill { position: relative; background: var(--paper); padding: 1.4rem; }
+.bill h2 { font-size: 1.9rem; margin-bottom: .6rem; }
+.lines { list-style: none; margin: 0; padding: 0; display: grid; }
+.line { display: grid; grid-template-columns: 64px minmax(0, 1fr) auto; gap: .8rem; align-items: center; padding: .8rem 0; border-bottom: 2px dashed rgba(31,20,16,.35); }
+.line .mini { width: 64px; height: 64px; border-radius: 50%; background: var(--peacock); border: 2.5px solid var(--ink); display: grid; place-items: center; }
+.line .mini svg { width: 54px; height: 54px; }
+.line .nm { font-weight: 800; font-size: 1.06rem; line-height: 1.2; }
+.line .dt { color: var(--ink-soft); font-size: .9rem; }
+.line .rt { display: grid; justify-items: end; gap: .35rem; }
+.line .rt b { font-variant-numeric: tabular-nums; font-size: 1.08rem; }
+.line .qty { grid-template-columns: 32px 2rem 32px; box-shadow: none; border-width: 2.5px; border-radius: 10px; }
+.line .qty button { min-height: 30px; font-size: 1rem; }
+.empty { display: grid; justify-items: center; gap: .8rem; text-align: center; padding: 1.5rem 0 .5rem; }
+.empty svg { width: 110px; height: 110px; }
+.checkout { background: var(--ink); color: var(--paper); border-radius: 22px; padding: 1.4rem; display: grid; gap: 1rem; position: sticky; top: 120px; }
+@media (max-width: 880px) { .checkout { position: static; } }
+.checkout h2 { font-size: 1.8rem; color: var(--marigold); }
+.checkout label, .checkout legend { font-weight: 700; }
+.checkout fieldset { border: 0; margin: 0; padding: 0; display: grid; gap: .45rem; min-width: 0; }
+.checkout .opt { background: transparent; color: var(--paper); border-color: var(--paper); }
+.checkout .opt:has(input:checked) { background: var(--marigold); color: var(--ink); border-color: var(--marigold); box-shadow: none; }
+.field { display: grid; gap: .35rem; min-width: 0; }
+input[type="text"] { width: 100%; min-height: 48px; padding: 0 .9rem; border-radius: 12px; border: 3px solid var(--ink); background: var(--paper); color: var(--ink); font: inherit; font-weight: 600; }
+input[type="text"]:focus { outline: none; box-shadow: 0 0 0 4px var(--marigold); }
+.err { color: #FF8A80; font-weight: 800; font-size: .88rem; }
+.total-row { display: flex; justify-content: space-between; align-items: baseline; padding-top: .9rem; border-top: 2px dashed rgba(255,249,236,.4); }
+.total-row b { font-family: var(--font-display); font-weight: 400; font-size: 2.1rem; color: var(--marigold); font-variant-numeric: tabular-nums; }
+.checkout .btn { width: 100%; }
+.thanks { position: relative; max-width: 680px; margin-inline: auto; background: var(--paper); padding: clamp(1.4rem, 4vw, 2.4rem); display: grid; gap: 1rem; justify-items: center; text-align: center; }
+.thanks h2 { font-size: clamp(2.2rem, 6vw, 3.4rem); }
+.clink { width: min(300px, 80%); height: auto; overflow: visible; }
+.clink .cl, .clink .cr { transform-box: fill-box; }
+.clink .cl { transform-origin: 100% 100%; } .clink .cr { transform-origin: 0% 100%; }
+@media (prefers-reduced-motion: no-preference) {
+  .thanks.celebrate .cl { animation: clinkL 1.1s cubic-bezier(.3,1.4,.5,1) both; }
+  .thanks.celebrate .cr { animation: clinkR 1.1s cubic-bezier(.3,1.4,.5,1) both; }
+  @keyframes clinkL { 0% { transform: translateX(-60px) rotate(0); } 60% { transform: translateX(0) rotate(14deg); } 100% { transform: rotate(10deg); } }
+  @keyframes clinkR { 0% { transform: translateX(60px) rotate(0); } 60% { transform: translateX(0) rotate(-14deg); } 100% { transform: rotate(-10deg); } }
+  .thanks.celebrate .splash { animation: splashOut .9s ease-out .55s both; transform-box: fill-box; transform-origin: 50% 100%; }
+  @keyframes splashOut { from { transform: scale(0); opacity: 0; } 40% { opacity: 1; } to { transform: scale(1); opacity: 0; } }
+  .thanks.celebrate .cheers { animation: cheersPop .6s cubic-bezier(.3,1.8,.5,1) .7s both; }
+  @keyframes cheersPop { from { transform: scale(0) rotate(-10deg); } to { transform: none; } }
+}
+.cheers { display: inline-block; font-family: var(--font-display); font-size: 1.4rem; color: var(--chilli); background: var(--marigold); border: 3px solid var(--ink); border-radius: 12px; padding: .1rem .8rem; box-shadow: 3px 3px 0 var(--ink); transform: rotate(-4deg); }
+.thanks dl { margin: 0; width: 100%; display: grid; grid-template-columns: max-content minmax(0, 1fr); gap: .45rem 1rem; text-align: left; padding: 1rem 0; border-block: 2.5px dashed var(--ink); }
+.thanks dt { font-weight: 800; text-transform: uppercase; letter-spacing: .08em; font-size: .78rem; color: var(--ink-soft); padding-top: .15rem; }
+.thanks dd { margin: 0; font-weight: 700; overflow-wrap: anywhere; white-space: pre-line; }
+.demo-note { background: #FFE9A6; border-radius: 12px; padding: .7rem .9rem; font-size: .92rem; font-weight: 500; text-align: left; }
+
+/* ---------- Visit ---------- */
+.visit-grid { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 1.5rem; align-items: start; }
+@media (max-width: 860px) { .visit-grid { grid-template-columns: minmax(0, 1fr); } }
+.card { position: relative; background: var(--paper); padding: 1.5rem; display: grid; gap: 1.1rem; }
+.card h2 { font-size: 1.9rem; }
+.info-label { font-weight: 800; text-transform: uppercase; letter-spacing: .1em; font-size: .78rem; color: var(--ink-soft); }
+.info-val { font-weight: 800; font-size: 1.2rem; user-select: all; overflow-wrap: anywhere; }
+.info-line { display: flex; flex-wrap: wrap; align-items: center; gap: .5rem .8rem; }
+.copy { border: 2.5px solid var(--ink); background: var(--marigold); border-radius: 10px; padding: .2rem .8rem; font-weight: 800; font-size: .85rem; cursor: pointer; }
+.landmarks { list-style: none; margin: 0; padding: 0; display: grid; gap: .6rem; counter-reset: l; }
+.landmarks li { display: grid; grid-template-columns: 34px minmax(0, 1fr); gap: .6rem; align-items: start; counter-increment: l; }
+.landmarks li::before { content: counter(l); width: 30px; height: 30px; border-radius: 50%; display: grid; place-items: center; background: var(--chilli); color: var(--paper); border: 2.5px solid var(--ink); font-weight: 800; }
+.hours { width: 100%; border-collapse: collapse; font-variant-numeric: tabular-nums; }
+.hours th, .hours td { text-align: left; padding: .45rem .5rem; border-bottom: 2px dashed rgba(31,20,16,.3); }
+.hours tr.today th, .hours tr.today td { background: var(--marigold); }
+.hours tr.today th::after { content: " · today"; color: var(--chilli); }
+.rush { display: grid; gap: .35rem; }
+.rush-bars { display: grid; grid-template-columns: repeat(17, minmax(0, 1fr)); align-items: end; gap: 3px; height: 90px; border-bottom: 3px solid var(--ink); }
+.rush-bars i { background: var(--peacock); border-radius: 4px 4px 0 0; border: 2px solid var(--ink); border-bottom: 0; }
+.rush-bars i.peak { background: var(--chilli); }
+.rush-bars i.now { background: var(--marigold); }
+.rush-axis { display: flex; justify-content: space-between; font-size: .78rem; font-weight: 700; color: var(--ink-soft); }
+
+/* ---------- Footer ---------- */
+.site-foot { background: var(--ink); color: var(--paper); }
+.foot-in { display: grid; grid-template-columns: minmax(0, 1.3fr) repeat(2, minmax(0, 1fr)); gap: 1.4rem 2rem; padding-block: 1.6rem 2.4rem; }
+.foot-in h4 { margin: 0 0 .3rem; font-size: .78rem; font-weight: 800; letter-spacing: .14em; text-transform: uppercase; color: var(--marigold); }
+.foot-in p { color: #EADFCB; }
+.foot-in .fine { grid-column: 1 / -1; font-size: .84rem; color: #BCA98F; border-top: 2px dashed rgba(255,249,236,.25); padding-top: 1rem; }
+@media (max-width: 760px) { .foot-in { grid-template-columns: minmax(0, 1fr); } }
+</style>
+
+<div id="pageTop" aria-hidden="true"></div>
+
+<!-- INTRO -->
+<div class="intro" id="intro">
+  <div class="bells swing" aria-hidden="true"></div>
+  <div class="hang">
+    <div class="chains" aria-hidden="true"><i></i><i></i></div>
+    <div class="signboard frame-paint">
+      <span class="corner tl" data-flower="a"></span><span class="corner tr" data-flower="b"></span><span class="corner bl" data-flower="b"></span><span class="corner br" data-flower="a"></span>
+      <span class="hindi" lang="hi">कड़क चाय</span>
+      <h1 class="painted">Kadak Kettle</h1>
+      <span class="sub">Chai stall · Station Road · since 1998</span>
+      <span class="intro-cup" data-art="kadak"></span>
+      <span class="intro-kettle" data-art="kettle"></span>
+    </div>
+  </div>
+  <button class="btn btn-yellow" type="button" id="enterBtn">Come in for chai →</button>
+</div>
+
+<header class="site-head">
+  <div class="head-bar">
+    <div class="wrap head-in">
+      <a class="brand" href="#home" aria-label="Kadak Kettle, home"><span class="brand-cup" data-art="kadak"></span><span><b>Kadak Kettle</b><small lang="hi">कड़क चाय</small></span></a>
+      <nav class="nav" aria-label="Pages">
+        <a href="#home" data-nav="home">Home</a>
+        <a href="#mix" data-nav="mix">Mix chai</a>
+        <a href="#menu" data-nav="menu">Menu</a>
+        <a href="#visit" data-nav="visit">Visit</a>
+      </nav>
+      <a class="btn btn-yellow small cart-btn" href="#order" data-nav="order">Your order <span class="badge" id="badge">0</span></a>
+    </div>
+  </div>
+  <div class="bells" aria-hidden="true"></div>
+</header>
+
+<main>
+  <!-- HOME -->
+  <section class="screen" id="screen-home" aria-label="Home">
+    <div class="sec" style="padding-top:1.5rem">
+      <div class="wrap hero-in">
+        <div class="hero-copy">
+          <span class="eyebrow">Station Road's favourite chai since 1998</span>
+          <h1 class="painted-dark">Kadak chai, poured from a height.</h1>
+          <span class="hindi-line" lang="hi">एक कप, सौ बातें</span>
+          <p class="lede">We pull every cup from arm's length so it lands frothy and hot. Mix your own, grab a bun maska, and order ahead on WhatsApp.</p>
+          <div class="ctas"><a class="btn" href="#mix">Mix your own chai</a><a class="btn btn-paper" href="#menu">See the menu</a></div>
+          <div class="facts"><span class="status" id="statusPill">Checking hours…</span><span>Cutting chai ₹15</span><span>1,200 cups a day</span></div>
+        </div>
+        <div class="stage frame-paint">
+          <span class="corner tl" data-flower="a"></span><span class="corner tr" data-flower="b"></span>
+          <svg class="pour" viewBox="0 0 520 520" role="img" aria-label="Animation: chai pours in a long stream from a kettle held high into a clay kulhad">
+            <defs><clipPath id="cupInside"><path d="M250 397 C252 430 259 470 266 487 Q332 504 398 487 C405 470 412 430 414 397 Z"/></clipPath></defs>
+            <g class="lift">
+              <g transform="translate(70 40) rotate(28 70 80)"><g id="heroKettle"></g></g>
+            </g>
+            <g class="stream"><path d="M241 145 C 252 160, 304 220, 320 300 S 332 370, 332 400" fill="none" stroke="#1F1410" stroke-width="13" stroke-linecap="round"/><path class="flow" d="M241 145 C 252 160, 304 220, 320 300 S 332 370, 332 400" fill="none" stroke="#B9763E" stroke-width="7" stroke-linecap="round"/></g>
+            <g transform="translate(248 347.6) scale(1.4)"><g id="heroCup"></g></g>
+            <circle class="drop" cx="324" cy="398" r="4" fill="#E6C29A" style="--dx:-18px"/><circle class="drop" cx="338" cy="398" r="3.4" fill="#E6C29A" style="--dx:16px"/><circle class="drop" cx="330" cy="398" r="3" fill="#FFFFFF" style="--dx:-4px"/>
+          </svg>
+          <span class="sign-ok"><span data-flower="a"></span><b>SIP OK PLEASE</b><span data-flower="b"></span></span>
+        </div>
+      </div>
+    </div>
+    <div class="zig" style="--from:var(--marigold);--to:var(--peacock)"></div>
+    <div class="sec band-peacock">
+      <div class="wrap">
+        <span class="eyebrow" style="color:var(--marigold)">What'll it be?</span>
+        <h2 class="painted" style="font-size:clamp(2.2rem,5vw,3.4rem);margin:.3rem 0 1.6rem">Pick a counter</h2>
+        <div class="tiles">
+          <a class="tile frame-paint" href="#mix"><span class="tile-art" data-art="masala"></span><b>Mix your own chai</b><span class="hindi" lang="hi">अपनी चाय बनाओ</span><span class="sub">Strength, milk, sugar, spices. Your cup, your way.</span></a>
+          <a class="tile frame-paint" href="#menu"><span class="tile-art" data-art="bunmaska"></span><b>Chai &amp; snacks menu</b><span class="hindi" lang="hi">मेन्यू</span><span class="sub">6 chais, 6 snacks, nothing over ₹45.</span></a>
+          <a class="tile frame-paint" href="#order"><span class="tile-art" data-art="cutting"></span><b>Order ahead</b><span class="hindi" lang="hi">ऑर्डर</span><span class="sub">Skip the queue. Order on WhatsApp, pick it up hot.</span></a>
+          <a class="tile frame-paint" href="#visit"><span class="tile-art" data-art="kettle"></span><b>Find the stall</b><span class="hindi" lang="hi">पता</span><span class="sub">Opposite the old bus depot. Follow the steam.</span></a>
+        </div>
+      </div>
+    </div>
+    <div class="zig" style="--from:var(--peacock);--to:transparent"></div>
+    <div class="sec">
+      <div class="wrap">
+        <span class="eyebrow">Most poured today</span>
+        <h2 class="painted-dark" style="font-size:clamp(2.2rem,5vw,3.4rem);margin:.3rem 0 1.6rem">The regulars' order</h2>
+        <ul class="items" id="favs"></ul>
+      </div>
+    </div>
+    <div class="zig" style="--from:var(--marigold);--to:var(--rani)"></div>
+    <div class="sec band-rani">
+      <div class="wrap story">
+        <div class="story-text">
+          <span class="eyebrow" style="color:var(--marigold)">Our story</span>
+          <h2 class="painted">Three generations, one kettle</h2>
+          <p>Ramesh-ji started with a bicycle, a kerosene stove and one dented kettle outside the bus depot in 1998. His son added the bun maska. His granddaughter painted the sign.</p>
+          <p>The kettle is still the same one. The chai is still boiled until it's kadak, and still poured from a height.</p>
+        </div>
+        <div class="truck-back frame-paint">
+          <span class="corner tl" data-flower="b"></span><span class="corner tr" data-flower="a"></span><span class="corner bl" data-flower="a"></span><span class="corner br" data-flower="b"></span>
+          <span class="eyes"><span data-peacock></span><span data-peacock></span></span>
+          <span class="ok">SIP OK<br>PLEASE</span>
+          <span class="small">Use dipper at night</span>
+          <span class="hindi" lang="hi" style="font-size:1.3rem;color:var(--peacock)">फिर मिलेंगे</span>
+        </div>
+      </div>
+    </div>
+    <div class="zig" style="--from:var(--rani);--to:var(--ink)"></div>
+  </section>
+
+  <!-- MIX -->
+  <section class="screen sec" id="screen-mix" aria-label="Mix your own chai" hidden>
+    <div class="wrap">
+      <div class="page-top"><a class="back" href="#home">← Back home</a><a class="back" href="#menu">See the menu</a></div>
+      <span class="eyebrow">Mix your own chai</span>
+      <h1 class="title painted-dark" style="margin:.3rem 0 1.6rem">Your cup, your rules</h1>
+      <div class="mixer">
+        <div class="cup-stage frame-paint">
+          <svg class="mix-svg" id="mixSvg" viewBox="0 0 320 330" role="img" aria-label="Your chai in a cup">
+            <g class="k-tilt"><g transform="translate(14 0) scale(.62)"><g id="mixKettle"></g></g></g>
+            <path class="pstream" d="M133 47 C 146 70, 160 110, 165 156" fill="none" stroke="#1F1410" stroke-width="9" stroke-linecap="round"/>
+            <path class="pstream" id="pstreamFill" d="M133 47 C 146 70, 160 110, 165 156" fill="none" stroke="#B9763E" stroke-width="4.5" stroke-linecap="round"/>
+            <g id="mixCup"></g>
+            <g id="mixSpices"></g>
+            <g id="mixSugar"></g>
+          </svg>
+          <div class="chai-name" id="chaiName">Medium Masala Chai</div>
+          <div class="chai-detail" id="chaiDetail"></div>
+        </div>
+        <div class="controls">
+          <div class="ctrl"><div class="ctrl-h"><b>Strength</b><span class="hindi" lang="hi">ताकत</span></div><div class="opts" id="optStrength"></div></div>
+          <div class="ctrl"><div class="ctrl-h"><b>Milk</b><span class="hindi" lang="hi">दूध</span></div><div class="opts" id="optMilk"></div></div>
+          <div class="ctrl"><div class="ctrl-h"><b>Sugar</b><span class="hindi" lang="hi">चीनी</span></div>
+            <div class="spoons"><div class="qty"><button type="button" id="sugMinus" aria-label="Less sugar">−</button><output id="sugar">2</output><button type="button" id="sugPlus" aria-label="More sugar">+</button></div><span class="spoon-row" id="spoonRow" aria-hidden="true"></span><span id="sugarWord" style="font-weight:700"></span></div>
+          </div>
+          <div class="ctrl"><div class="ctrl-h"><b>Spices</b><span class="hindi" lang="hi">मसाले</span></div><div class="opts" id="optSpices"></div></div>
+          <div class="ctrl"><div class="ctrl-h"><b>Served in</b><span class="hindi" lang="hi">कप</span></div><div class="opts" id="optCup"></div></div>
+          <div class="mix-buy">
+            <div><span class="price" id="mixPrice">₹0</span><div style="font-size:.88rem;color:#EADFCB">per cup</div></div>
+            <div class="qty"><button type="button" id="mqMinus" aria-label="One fewer cup">−</button><output id="mixQty">1</output><button type="button" id="mqPlus" aria-label="One more cup">+</button></div>
+            <button class="btn btn-yellow" type="button" id="addMix">Add to order</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- MENU -->
+  <section class="screen sec" id="screen-menu" aria-label="Menu" hidden>
+    <div class="wrap">
+      <div class="page-top"><a class="back" href="#home">← Back home</a><a class="btn small" href="#order">View order</a></div>
+      <span class="eyebrow">Menu</span>
+      <h1 class="title painted-dark" style="margin-top:.3rem">Chai &amp; snacks</h1>
+      <p class="lede" style="margin-top:.8rem">Everything is made fresh at the stall. Tap + to add to your order, then send it on WhatsApp.</p>
+      <div class="menu-head"><h2>Chai</h2><span class="hindi" lang="hi">चाय</span></div>
+      <ul class="items" id="menuChai"></ul>
+      <div class="menu-head"><h2>Snacks</h2><span class="hindi" lang="hi">नाश्ता</span></div>
+      <ul class="items" id="menuSnacks"></ul>
+    </div>
+  </section>
+
+  <!-- ORDER -->
+  <section class="screen sec" id="screen-order" aria-label="Your order" hidden>
+    <div class="wrap">
+      <div class="page-top"><a class="back" href="#home">← Back home</a><a class="back" href="#menu">Add more</a></div>
+      <div id="orderForm">
+        <span class="eyebrow">Order ahead</span>
+        <h1 class="title painted-dark" style="margin:.3rem 0 1.6rem">Your order</h1>
+        <div class="order-grid">
+          <div class="bill frame-paint"><h2>On the tray</h2><ul class="lines" id="lines"></ul></div>
+          <form class="checkout" id="checkout" novalidate>
+            <h2>Pickup</h2>
+            <fieldset><legend>When will you come?</legend><div class="opts" id="optPickup"></div></fieldset>
+            <div class="field"><label for="oName">Name for the order</label><input type="text" id="oName" autocomplete="given-name" placeholder="e.g. Priya"><span class="err" id="oNameErr" hidden>Add a name so we can shout it out.</span></div>
+            <div class="total-row"><span>Total</span><b id="oTotal">₹0</b></div>
+            <button class="btn btn-yellow" type="submit" id="placeBtn">Place order</button>
+            <span style="font-size:.88rem;color:#EADFCB">Pay at the stall in cash or UPI.</span>
+          </form>
+        </div>
+      </div>
+      <div class="thanks frame-paint" id="thanks" hidden tabindex="-1">
+        <span class="corner tl" data-flower="a"></span><span class="corner tr" data-flower="b"></span>
+        <svg class="clink" viewBox="0 0 300 170" aria-hidden="true">
+          <g class="cl"><g transform="translate(28 30) scale(1.05)" id="clinkL"></g></g>
+          <g class="cr"><g transform="translate(146 30) scale(1.05)" id="clinkR"></g></g>
+          <g class="splash"><circle cx="150" cy="40" r="5" fill="#E6C29A"/><circle cx="138" cy="28" r="4" fill="#E6C29A"/><circle cx="163" cy="26" r="4" fill="#E6C29A"/><circle cx="150" cy="16" r="3" fill="#FFFFFF"/><path d="M128 44 l-10 -6 M172 44 l10 -6 M150 8 v-8" stroke="#1F1410" stroke-width="3" stroke-linecap="round"/></g>
+        </svg>
+        <span class="cheers">Cheers!</span>
+        <h2 class="painted-dark" id="thanksTitle">Thank you for ordering!</h2>
+        <p id="thanksMsg" style="font-weight:600;font-size:1.1rem"></p>
+        <dl id="thanksDl"></dl>
+        <p class="demo-note">This is a concept site, so nothing has been sent. On a live site, "Send on WhatsApp" opens WhatsApp with this order ready to send to the stall.</p>
+        <div class="ctas" style="justify-content:center"><a class="btn btn-green" id="waBtn" href="https://wa.me/" target="_blank" rel="noopener">Send on WhatsApp</a><button class="btn btn-paper" type="button" id="copyOrder">Copy order</button><a class="btn btn-yellow" href="#home">← Back home</a></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- VISIT -->
+  <section class="screen sec" id="screen-visit" aria-label="Visit" hidden>
+    <div class="wrap">
+      <div class="page-top"><a class="back" href="#home">← Back home</a><a class="btn small" href="#order">Order ahead</a></div>
+      <span class="eyebrow">Visit</span>
+      <h1 class="title painted-dark" style="margin:.3rem 0 1.6rem">Follow the steam</h1>
+      <div class="visit-grid">
+        <div class="card frame-paint">
+          <div><span class="info-label">Where</span><p class="info-val" style="user-select:text">Corner of Station Road &amp; 3rd Cross<br>opposite the old bus depot</p></div>
+          <div><span class="info-label">How to find us</span>
+            <ol class="landmarks"><li>Walk out of the station's east gate and turn left.</li><li>Pass the yellow post box and the flower sellers.</li><li>Look for the painted sign and the queue. That's us.</li></ol>
+          </div>
+          <div><span class="info-label">Call or WhatsApp</span><div class="info-line"><span class="info-val" id="phoneVal">+91 98765 43210</span><button class="copy" type="button" data-copy="phoneVal">Copy</button></div></div>
+        </div>
+        <div class="card frame-paint">
+          <h2>Kettle hours</h2>
+          <table class="hours" aria-label="Opening hours"><tbody id="hoursBody"></tbody></table>
+          <div class="rush">
+            <span class="info-label">When it's busy</span>
+            <div class="rush-bars" id="rush" role="img" aria-label="Busiest at 8 to 9 am and 5 to 7 pm"></div>
+            <div class="rush-axis"><span>6 am</span><span>12 pm</span><span>6 pm</span><span>11 pm</span></div>
+            <span style="font-size:.9rem;color:var(--ink-soft)">Red bars are rush hours. Order ahead to skip the queue.</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div class="toast" id="toast" role="status" aria-live="polite"><span id="toastMsg">Added</span><a href="#order">View order →</a></div>
+
+<footer class="site-foot">
+  <div class="bells" aria-hidden="true" style="background-color:var(--ink)"></div>
+  <div class="wrap foot-in">
+    <div style="display:grid;gap:.6rem"><a class="brand" href="#home"><span class="brand-cup" data-art="kadak"></span><span><b>Kadak Kettle</b><small lang="hi">कड़क चाय</small></span></a><p>Chai poured from a height since 1998.</p></div>
+    <div><h4>Stall</h4><p>Station Road &amp; 3rd Cross<br>opposite the old bus depot</p></div>
+    <div><h4>Hours</h4><p>Every day · 6 am – 11 pm</p></div>
+    <p class="fine">Kadak Kettle is a fictional chai stall. This is a concept website with original illustrations.</p>
+  </div>
+</footer>
+
+<script>
+/* ---------- Original truck-art style illustrations ---------- */
+var K = "#1F1410";
+function sk(fill, w) { return 'fill="' + fill + '" stroke="' + K + '" stroke-width="' + (w || 3) + '" stroke-linejoin="round" stroke-linecap="round"'; }
+function wrap120(s) { return '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" aria-hidden="true">' + s + '</svg>'; }
+function steamLines(x, y, n) {
+  var s = "";
+  for (var i = 0; i < (n || 2); i++) s += '<path class="steam" style="--d:' + (i * .7) + 's" d="M' + (x + i * 14) + ' ' + y + ' c-6 -7 6 -11 0 -19 c-5 -6 4 -9 0 -14" fill="none" stroke="#FFFFFF" stroke-width="3.2" stroke-linecap="round" opacity=".85"/>';
+  return s;
+}
+function mixHex(a, b, t) {
+  function p(h) { return [parseInt(h.slice(1, 3), 16), parseInt(h.slice(3, 5), 16), parseInt(h.slice(5, 7), 16)]; }
+  var A = p(a), B = p(b);
+  return "#" + A.map(function (v, i) { var c = Math.round(v + (B[i] - v) * t); return (c < 16 ? "0" : "") + c.toString(16); }).join("");
+}
+/* tea colour from strength (0-2), milk (full/less/oat/none) and saffron */
+function chaiColor(strength, milk, kesar) {
+  var base = ["#A85A22", "#86400F", "#5E2508"][strength];
+  var amt = { full: .4, less: .24, oat: .34, none: 0 }[milk];
+  var milkCol = milk === "oat" ? "#E7D6BE" : "#F4DEC0";
+  var c = mixHex(base, milkCol, amt);
+  if (kesar) c = mixHex(c, "#E8A13A", .22);
+  return c;
+}
+function kulhad(liquid, opts) {
+  opts = opts || {};
+  var top = opts.top || "";
+  return wrap120(
+    '<ellipse cx="60" cy="108" rx="34" ry="6" fill="' + K + '" opacity=".18"/>' +
+    '<path d="M24 36 C26 60 32 86 38 100 Q60 110 82 100 C88 86 94 60 96 36 Z" ' + sk("#C8643B") + '/>' +
+    '<path d="M37 96 Q60 105 83 96 L82 100 Q60 110 38 100 Z" fill="#9E4626"/>' +
+    '<path d="M29 58 Q37 51 45 58 T61 58 T77 58 T93 58" fill="none" stroke="#FFF4DD" stroke-width="3" stroke-linecap="round"/>' +
+    '<circle cx="37" cy="68" r="2.4" fill="#FFC21A"/><circle cx="53" cy="68" r="2.4" fill="#3DAA3A"/><circle cx="69" cy="68" r="2.4" fill="#FFC21A"/><circle cx="85" cy="68" r="2.4" fill="#3DAA3A"/>' +
+    '<path d="M31 44 C32 62 36 80 41 92" fill="none" stroke="#FFFFFF" stroke-width="4" stroke-linecap="round" opacity=".28"/>' +
+    '<ellipse cx="60" cy="36" rx="36" ry="9" ' + sk("#B35530") + '/>' +
+    '<ellipse cx="60" cy="37" rx="31" ry="6.4" fill="' + liquid + '"/>' +
+    '<ellipse cx="60" cy="37" rx="25" ry="4.4" fill="none" stroke="#FFFFFF" stroke-width="1.6" opacity=".35"/>' +
+    top + (opts.steam === false ? "" : steamLines(50, 22, 2))
+  );
+}
+function cuttingGlass(liquid, opts) {
+  opts = opts || {};
+  return wrap120(
+    '<ellipse cx="60" cy="106" rx="26" ry="5" fill="' + K + '" opacity=".18"/>' +
+    '<path d="M35.6 50 L40 100 Q60 106 80 100 L84.4 50 Z" fill="' + liquid + '"/>' +
+    '<ellipse cx="60" cy="50" rx="24.2" ry="5" fill="' + mixHex(liquid, "#FFFFFF", .18) + '"/>' +
+    '<path d="M34 32 L40 100 Q60 106 80 100 L86 32" fill="#FFFFFF" fill-opacity=".14" stroke="' + K + '" stroke-width="3" stroke-linejoin="round"/>' +
+    '<path d="M44 38 L47 98 M53 38 L54.5 101 M67 38 L65.5 101 M76 38 L73 98" stroke="#FFFFFF" stroke-width="2.2" opacity=".55"/>' +
+    '<ellipse cx="60" cy="32" rx="26" ry="5.6" fill="#FFFFFF" fill-opacity=".35" stroke="' + K + '" stroke-width="3"/>' +
+    (opts.extra || "") + (opts.steam === false ? "" : steamLines(52, 22, 2))
+  );
+}
+var SPICE = {
+  elaichi: '<svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 26 C10 12 26 6 33 10 C32 20 20 32 8 26 Z" fill="#7DB84E" stroke="' + K + '" stroke-width="2.4" stroke-linejoin="round"/><path d="M12 24 C17 18 24 13 30 12 M14 27 C20 23 26 18 31 14" fill="none" stroke="#4E8A2C" stroke-width="1.8" stroke-linecap="round"/></svg>',
+  adrak: '<svg viewBox="0 0 40 40" aria-hidden="true"><path d="M6 24 C6 16 13 15 16 18 C17 10 26 8 28 15 C34 13 37 21 31 25 C33 32 22 34 20 29 C15 34 6 31 6 24 Z" fill="#E7C48B" stroke="' + K + '" stroke-width="2.4" stroke-linejoin="round"/><path d="M12 22 h4 M22 19 l3 2 M24 27 h4" stroke="#B88A4A" stroke-width="1.8" stroke-linecap="round"/></svg>',
+  tulsi: '<svg viewBox="0 0 40 40" aria-hidden="true"><path d="M20 35 C8 30 6 14 20 5 C34 14 32 30 20 35 Z" fill="#3DAA3A" stroke="' + K + '" stroke-width="2.4" stroke-linejoin="round"/><path d="M20 33 V9 M20 16 L14 12 M20 22 L13 18 M20 16 L26 12 M20 22 L27 18" stroke="#1E7A24" stroke-width="1.8" stroke-linecap="round" fill="none"/></svg>',
+  dalchini: '<svg viewBox="0 0 40 40" aria-hidden="true"><rect x="5" y="14" width="30" height="12" rx="5" fill="#9A5B2E" stroke="' + K + '" stroke-width="2.4" transform="rotate(-20 20 20)"/><path d="M10 22 C14 18 20 16 30 13" fill="none" stroke="#C88B55" stroke-width="2" stroke-linecap="round"/><ellipse cx="33" cy="12.5" rx="3" ry="5.5" fill="#C88B55" stroke="' + K + '" stroke-width="2" transform="rotate(-20 33 12.5)"/></svg>',
+  kalimirch: '<svg viewBox="0 0 40 40" aria-hidden="true"><circle cx="14" cy="16" r="5" fill="#2B2420" stroke="' + K + '" stroke-width="1.6"/><circle cx="26" cy="14" r="5" fill="#3A302A" stroke="' + K + '" stroke-width="1.6"/><circle cx="20" cy="25" r="5" fill="#2B2420" stroke="' + K + '" stroke-width="1.6"/><circle cx="12.5" cy="14.5" r="1.4" fill="#fff" opacity=".5"/><circle cx="24.5" cy="12.5" r="1.4" fill="#fff" opacity=".5"/></svg>',
+  kesar: '<svg viewBox="0 0 40 40" aria-hidden="true"><path d="M8 30 Q14 18 12 8 M16 32 Q22 20 22 9 M24 32 Q27 20 31 10 M30 33 Q33 26 35 18" fill="none" stroke="#E2231A" stroke-width="3.2" stroke-linecap="round"/><path d="M12 8 l-2 -3 M22 9 l0 -4 M31 10 l2 -3" stroke="#FF8A1F" stroke-width="3" stroke-linecap="round"/></svg>'
+};
+var ART = {};
+ART.masala = kulhad(chaiColor(1, "full", false), { top: '<circle cx="50" cy="36" r="2" fill="#3A1A08"/><circle cx="68" cy="38" r="1.6" fill="#3A1A08"/>' });
+ART.kadak = kulhad(chaiColor(2, "less", false), { top: '<path d="M54 30 l8 -12 l-2 9 l7 -1 l-9 13 l2 -9 Z" fill="#FFC21A" stroke="' + K + '" stroke-width="1.6" stroke-linejoin="round"/>' });
+ART.kesar = kulhad(chaiColor(1, "full", true), { top: '<path d="M48 36 q4 -3 7 0 M62 38 q4 -3 7 0" stroke="#E2231A" stroke-width="2" fill="none" stroke-linecap="round"/><circle cx="58" cy="34" r="2.6" fill="#8DC26F"/><circle cx="66" cy="35" r="2" fill="#8DC26F"/>' });
+ART.cutting = cuttingGlass(chaiColor(1, "full", false));
+ART.adrak = cuttingGlass(chaiColor(1, "less", false), { extra: '<g transform="translate(70 24) scale(.6)">' + SPICE.adrak.replace(/<\/?svg[^>]*>/g, "") + '</g>' });
+ART.tulsi = cuttingGlass("#8C9A3A", { extra: '<g transform="translate(66 20) scale(.62)">' + SPICE.tulsi.replace(/<\/?svg[^>]*>/g, "") + '</g>' });
+ART.bunmaska = wrap120(
+  '<ellipse cx="60" cy="98" rx="44" ry="8" fill="' + K + '" opacity=".16"/>' +
+  '<path d="M18 74 Q18 94 60 96 Q102 94 102 74 Z" ' + sk("#E7A54A") + '/>' +
+  '<rect x="22" y="62" width="76" height="14" rx="5" ' + sk("#FFE07A") + '/>' +
+  '<path d="M20 62 C20 30 100 30 100 62 Z" ' + sk("#E39A3C") + '/>' +
+  '<path d="M36 44 C46 36 66 34 80 40" fill="none" stroke="#F6C77A" stroke-width="4" stroke-linecap="round"/>' +
+  '<circle cx="40" cy="52" r="1.6" fill="#FFF4DD"/><circle cx="58" cy="46" r="1.6" fill="#FFF4DD"/><circle cx="74" cy="52" r="1.6" fill="#FFF4DD"/><circle cx="50" cy="56" r="1.4" fill="#FFF4DD"/><circle cx="84" cy="56" r="1.4" fill="#FFF4DD"/>' +
+  '<path d="M30 66 h12 M52 69 h14 M76 66 h10" stroke="#F3C64D" stroke-width="2.4" stroke-linecap="round"/>'
+);
+ART.samosa = wrap120(
+  '<ellipse cx="58" cy="100" rx="44" ry="7" fill="' + K + '" opacity=".16"/>' +
+  '<path d="M58 20 L98 90 Q58 102 18 90 Z" ' + sk("#E3A33B") + '/>' +
+  '<path d="M58 20 L70 92" fill="none" stroke="#B9761F" stroke-width="2.4" stroke-linecap="round"/>' +
+  '<path d="M58 20 Q54 30 50 28 Q48 38 43 37 Q42 47 37 46 Q36 56 31 56 Q30 66 25 66 Q24 76 20 78" fill="none" stroke="#B9761F" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>' +
+  '<circle cx="62" cy="58" r="2.2" fill="#F6C77A"/><circle cx="76" cy="72" r="2" fill="#F6C77A"/><circle cx="48" cy="72" r="2" fill="#F6C77A"/><circle cx="66" cy="82" r="1.8" fill="#F6C77A"/>' +
+  '<ellipse cx="96" cy="98" rx="14" ry="6" ' + sk("#FFFFFF", 2.4) + '/><ellipse cx="96" cy="97" rx="10" ry="3.6" fill="#3DAA3A"/>'
+);
+ART.vadapav = wrap120(
+  '<ellipse cx="58" cy="100" rx="42" ry="7" fill="' + K + '" opacity=".16"/>' +
+  '<path d="M20 82 Q20 98 58 98 Q96 98 96 82 Z" ' + sk("#E8AE5A") + '/>' +
+  '<ellipse cx="58" cy="76" rx="40" ry="11" ' + sk("#B5651D") + '/>' +
+  '<path d="M26 74 q6 -4 12 0 q6 4 12 0 q6 -4 12 0 q6 4 12 0 q6 -4 12 0" fill="none" stroke="#3DAA3A" stroke-width="3.2" stroke-linecap="round"/>' +
+  '<path d="M18 70 C18 36 98 36 98 70 Q58 76 18 70 Z" ' + sk("#E39A3C") + '/>' +
+  '<path d="M34 50 C44 42 66 40 80 46" fill="none" stroke="#F6C77A" stroke-width="4" stroke-linecap="round"/>' +
+  '<circle cx="46" cy="58" r="1.5" fill="#FFF4DD"/><circle cx="64" cy="52" r="1.5" fill="#FFF4DD"/><circle cx="76" cy="60" r="1.5" fill="#FFF4DD"/>' +
+  '<path d="M96 36 Q108 54 98 78" fill="none" stroke="' + K + '" stroke-width="8" stroke-linecap="round"/><path d="M96 36 Q108 54 98 78" fill="none" stroke="#3DAA3A" stroke-width="4.4" stroke-linecap="round"/><path d="M95 36 l-3 -5" stroke="#1E7A24" stroke-width="3" stroke-linecap="round"/>'
+);
+ART.poha = wrap120(
+  '<ellipse cx="60" cy="102" rx="42" ry="6" fill="' + K + '" opacity=".16"/>' +
+  '<path d="M16 60 Q20 98 60 100 Q100 98 104 60 Z" ' + sk("#CBD3DC") + '/>' +
+  '<path d="M24 70 Q30 92 60 94" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-linecap="round" opacity=".7"/>' +
+  '<path d="M18 60 C22 40 40 32 60 32 C80 32 98 40 102 60 Z" ' + sk("#F2C94C") + '/>' +
+  '<path d="M30 52 q4 -3 8 0 M48 42 q4 -3 8 0 M68 46 q4 -3 8 0 M82 54 q4 -3 8 0 M40 58 q4 -3 8 0 M60 56 q4 -3 8 0" fill="none" stroke="#D9A82A" stroke-width="2" stroke-linecap="round"/>' +
+  '<circle cx="42" cy="48" r="3" fill="#3DAA3A" stroke="' + K + '" stroke-width="1.2"/><circle cx="70" cy="40" r="3" fill="#3DAA3A" stroke="' + K + '" stroke-width="1.2"/><circle cx="78" cy="54" r="3" fill="#3DAA3A" stroke="' + K + '" stroke-width="1.2"/><circle cx="54" cy="54" r="2.4" fill="#E2231A"/><circle cx="64" cy="48" r="2.4" fill="#E2231A"/>' +
+  '<path d="M34 40 l10 4 M86 44 l-8 6" stroke="#2F7A2C" stroke-width="4" stroke-linecap="round"/>' +
+  '<path d="M88 30 L104 46 Q96 52 88 46 Z" ' + sk("#F7E35A", 2.2) + '/>' +
+  '<path d="M50 34 l6 -4 M58 33 l4 -5 M66 35 l6 -3" stroke="#E07B1F" stroke-width="2" stroke-linecap="round"/>'
+);
+ART.pakora = wrap120(
+  '<ellipse cx="60" cy="100" rx="44" ry="7" fill="' + K + '" opacity=".16"/>' +
+  '<path d="M16 88 L60 24 L104 88 Q60 98 16 88 Z" ' + sk("#D58A2C") + '/>' +
+  '<path d="M26 82 L60 34 L94 82 Q60 90 26 82 Z" fill="#F4D7A0"/>' +
+  '<path d="M34 76 L60 42 L86 76 Q60 82 34 76 Z" fill="#7CBF5A"/>' +
+  '<path d="M40 72 Q60 52 80 72" fill="none" stroke="#F6E7C8" stroke-width="5" stroke-linecap="round"/>' +
+  '<circle cx="22" cy="86" r="4" fill="#C2771F"/><circle cx="98" cy="86" r="4" fill="#C2771F"/><circle cx="60" cy="26" r="4" fill="#C2771F"/><circle cx="40" cy="56" r="3" fill="#C2771F"/><circle cx="80" cy="56" r="3" fill="#C2771F"/>'
+);
+ART.biscuits = wrap120(
+  '<ellipse cx="60" cy="100" rx="40" ry="7" fill="' + K + '" opacity=".16"/>' +
+  [[60, 86], [56, 70], [64, 54]].map(function (p) {
+    return '<ellipse cx="' + p[0] + '" cy="' + p[1] + '" rx="34" ry="11" ' + sk("#D99A45") + '/><ellipse cx="' + p[0] + '" cy="' + (p[1] - 3) + '" rx="30" ry="7.5" fill="#EDB863"/>' +
+      [-14, -4, 6, 16].map(function (d, i) { return '<circle cx="' + (p[0] + d) + '" cy="' + (p[1] - 3 + (i % 2 ? 2 : -1)) + '" r="1.5" fill="#B9761F"/>'; }).join("");
+  }).join("")
+);
+ART.kettle = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 180 160" aria-hidden="true">' +
+  '<path d="M44 34 C44 6 112 6 112 34" fill="none" stroke="' + K + '" stroke-width="9" stroke-linecap="round"/>' +
+  '<path d="M44 34 C44 6 112 6 112 34" fill="none" stroke="#3A2E28" stroke-width="5" stroke-linecap="round"/>' +
+  '<path d="M114 96 C134 92 146 74 168 52 L174 58 C156 84 144 108 118 116 Z" ' + sk("#BFC6CF") + '/>' +
+  '<path d="M30 44 L126 44 L136 126 Q78 140 20 126 Z" ' + sk("#CDD3DB") + '/>' +
+  '<path d="M38 52 L46 124" stroke="#FFFFFF" stroke-width="6" stroke-linecap="round" opacity=".7"/>' +
+  '<path d="M24 100 Q78 112 132 100" fill="none" stroke="#9BA4AF" stroke-width="3"/>' +
+  '<ellipse cx="78" cy="44" rx="50" ry="10" ' + sk("#B8C0CA") + '/>' +
+  '<ellipse cx="78" cy="38" rx="20" ry="7" ' + sk("#A8B1BC", 2.6) + '/><circle cx="78" cy="30" r="5" ' + sk("#3A2E28", 2.4) + '/>' +
+  '<path d="M58 72 l8 10 l8 -10 l8 10 l8 -10" fill="none" stroke="#E2231A" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>' +
+  '</svg>';
+function flowerSVG(a, b) {
+  var s = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 40 40" aria-hidden="true">';
+  for (var i = 0; i < 8; i++) s += '<ellipse cx="20" cy="9" rx="5" ry="8.5" fill="' + (i % 2 ? b : a) + '" stroke="' + K + '" stroke-width="1.6" transform="rotate(' + (i * 45) + ' 20 20)"/>';
+  return s + '<circle cx="20" cy="20" r="6" fill="#FFC21A" stroke="' + K + '" stroke-width="1.6"/><circle cx="20" cy="20" r="2.4" fill="#E2231A"/></svg>';
+}
+var PEACOCK = '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 80" aria-hidden="true"><path d="M30 78 C30 60 30 50 30 40" stroke="#3DAA3A" stroke-width="3"/>' +
+  '<path d="M30 6 C50 10 56 34 46 50 C40 60 20 60 14 50 C4 34 10 10 30 6 Z" fill="#3DAA3A" stroke="' + K + '" stroke-width="2"/>' +
+  '<ellipse cx="30" cy="32" rx="13" ry="17" fill="#FFC21A"/><ellipse cx="30" cy="33" rx="9.5" ry="12.5" fill="#0B8A8C"/><ellipse cx="30" cy="35" rx="6" ry="8" fill="#1D3A9E"/><ellipse cx="30" cy="36" rx="2.6" ry="3.4" fill="#0B1B4A"/></svg>';
+
+(function () {
+  "use strict";
+  var REDUCED = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  function $(id) { return document.getElementById(id); }
+  function esc(s) { return String(s).replace(/[&<>"]/g, function (c) { return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]; }); }
+  function rupees(n) { return "₹" + n; }
+  function inner(svg) { return svg.replace(/^<svg[^>]*>/, "").replace(/<\/svg>\s*$/, ""); }
+  function clock(d) { var h = d.getHours(), m = d.getMinutes(); return (h % 12 || 12) + ":" + (m < 10 ? "0" : "") + m + " " + (h < 12 ? "am" : "pm"); }
+  var OPEN = 6 * 60, CLOSE = 23 * 60;
+  var DAYS = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+
+  /* ---------- Data ---------- */
+  var MENU = {
+    chai: [
+      { id: "cutting", art: "cutting", name: "Cutting Chai", hi: "कटिंग चाय", price: 15, desc: "Half a glass, strong and sweet. The one everyone orders first." },
+      { id: "masala", art: "masala", name: "Masala Chai", hi: "मसाला चाय", price: 25, desc: "Ginger, cardamom, clove and black pepper boiled with full-cream milk." },
+      { id: "adrak", art: "adrak", name: "Adrak Chai", hi: "अदरक चाय", price: 25, desc: "Fresh ginger crushed straight into the pot. Good for a sore throat." },
+      { id: "tulsi", art: "tulsi", name: "Tulsi Chai", hi: "तुलसी चाय", price: 30, desc: "Holy basil and lemongrass, light on milk. Calm in a glass." },
+      { id: "kadak", art: "kadak", name: "Kadak Special", hi: "कड़क स्पेशल", price: 35, desc: "Boiled three times until it's dark and bold. Served in a kulhad." },
+      { id: "kesar", art: "kesar", name: "Kesar Chai", hi: "केसर चाय", price: 45, desc: "Saffron, crushed pistachio and a little cardamom. For special days." }
+    ],
+    snacks: [
+      { id: "bunmaska", art: "bunmaska", name: "Bun Maska", hi: "बन मस्का", price: 30, desc: "Soft bun, a thick layer of butter and a pinch of sugar. Dip it in your chai." },
+      { id: "samosa", art: "samosa", name: "Samosa (2 pcs)", hi: "समोसा", price: 30, desc: "Potato and pea filling, crisp crust, green chutney on the side." },
+      { id: "vadapav", art: "vadapav", name: "Vada Pav", hi: "वड़ा पाव", price: 25, desc: "Spiced potato vada in a soft pav with dry garlic chutney and a fried chilli." },
+      { id: "poha", art: "poha", name: "Kanda Poha", hi: "पोहा", price: 40, desc: "Flattened rice with onion, peas, curry leaves, lemon and crunchy sev." },
+      { id: "pakora", art: "pakora", name: "Bread Pakora", hi: "ब्रेड पकोड़ा", price: 30, desc: "Bread stuffed with green chutney, dipped in gram-flour batter and fried." },
+      { id: "biscuits", art: "biscuits", name: "Osmania Biscuits (4)", hi: "बिस्कुट", price: 20, desc: "Sweet-and-salty butter biscuits. Made for dunking." }
+    ]
+  };
+  var ALL = MENU.chai.concat(MENU.snacks);
+  function byId(id) { return ALL.filter(function (x) { return x.id === id; })[0]; }
+
+  /* ---------- Static art ---------- */
+  document.querySelectorAll("[data-art]").forEach(function (el) { el.innerHTML = ART[el.getAttribute("data-art")] || ""; });
+  document.querySelectorAll("[data-flower]").forEach(function (el) { el.innerHTML = el.getAttribute("data-flower") === "a" ? flowerSVG("#E5197E", "#1FA6D9") : flowerSVG("#3DAA3A", "#FFC21A"); });
+  document.querySelectorAll("[data-peacock]").forEach(function (el) { el.innerHTML = PEACOCK; });
+  $("heroKettle").innerHTML = inner(ART.kettle);
+  $("heroCup").innerHTML = inner(kulhad(chaiColor(1, "full", false), { steam: true }));
+  $("mixKettle").innerHTML = inner(ART.kettle);
+  $("clinkL").innerHTML = inner(kulhad(chaiColor(2, "full", false), { steam: false }));
+  $("clinkR").innerHTML = inner(kulhad(chaiColor(1, "full", true), { steam: false }));
+
+  /* ---------- Cart ---------- */
+  var cart = {}; // key -> {key,name,detail,price,qty,art}
+  function count() { var n = 0; Object.keys(cart).forEach(function (k) { n += cart[k].qty; }); return n; }
+  function total() { var t = 0; Object.keys(cart).forEach(function (k) { t += cart[k].qty * cart[k].price; }); return t; }
+  function setQty(key, q, info) {
+    if (q <= 0) delete cart[key];
+    else if (cart[key]) cart[key].qty = q;
+    else { info.key = key; info.qty = q; cart[key] = info; }
+    refreshAll();
+  }
+  function addItem(id) {
+    var it = byId(id), cur = cart[id] ? cart[id].qty : 0;
+    setQty(id, cur + 1, { name: it.name, detail: it.hi, price: it.price, art: ART[it.art] });
+    if (!cur) toast("Added " + it.name);
+  }
+  var toastT = 0;
+  function toast(msg) {
+    $("toastMsg").textContent = msg; $("toast").classList.add("show");
+    clearTimeout(toastT); toastT = setTimeout(function () { $("toast").classList.remove("show"); }, 2600);
+  }
+  function refreshBadge() {
+    var b = $("badge"); b.textContent = count();
+    b.classList.remove("bump"); void b.offsetWidth; b.classList.add("bump");
+  }
+
+  /* ---------- Menu cards ---------- */
+  function cardHTML(it) {
+    var q = cart[it.id] ? cart[it.id].qty : 0;
+    var ctrl = q
+      ? '<div class="qty"><button type="button" data-dec="' + it.id + '" aria-label="One fewer ' + esc(it.name) + '">−</button><output>' + q + '</output><button type="button" data-inc="' + it.id + '" aria-label="One more ' + esc(it.name) + '">+</button></div>'
+      : '<button class="btn small" type="button" data-inc="' + it.id + '">+ Add</button>';
+    return '<li class="item frame-paint"><span class="pic">' + ART[it.art] + '</span><h3>' + esc(it.name) + '</h3><span class="hindi" lang="hi">' + it.hi + '</span><p>' + esc(it.desc) + '</p>' +
+      '<div class="item-foot"><b>' + rupees(it.price) + '</b>' + ctrl + '</div></li>';
+  }
+  function renderMenus() {
+    $("menuChai").innerHTML = MENU.chai.map(cardHTML).join("");
+    $("menuSnacks").innerHTML = MENU.snacks.map(cardHTML).join("");
+    $("favs").innerHTML = ["masala", "bunmaska", "samosa"].map(function (id) { return cardHTML(byId(id)); }).join("");
+  }
+  document.addEventListener("click", function (e) {
+    var b = e.target.closest && e.target.closest("[data-inc],[data-dec]");
+    if (!b) return;
+    var inc = b.getAttribute("data-inc"), dec = b.getAttribute("data-dec");
+    if (inc) { if (byId(inc)) addItem(inc); else if (cart[inc]) setQty(inc, cart[inc].qty + 1); }
+    if (dec && cart[dec]) setQty(dec, cart[dec].qty - 1);
+    var sel = b.getAttribute("data-inc") ? '[data-inc="' + inc + '"]' : '[data-dec="' + dec + '"]';
+    var host = b.closest("ul, .lines");
+    if (host && host.id) { var again = $(host.id).querySelector(sel) || $(host.id).querySelector('[data-inc="' + (inc || dec) + '"]'); if (again) again.focus(); }
+  });
+
+  /* ---------- Mix your chai ---------- */
+  var mix = { strength: 1, milk: "full", sugar: 2, spices: ["elaichi", "adrak"], cup: "kulhad", qty: 1 };
+  var SPICES = [
+    { id: "elaichi", name: "Elaichi", en: "cardamom", price: 5 },
+    { id: "adrak", name: "Adrak", en: "ginger", price: 5 },
+    { id: "tulsi", name: "Tulsi", en: "holy basil", price: 5 },
+    { id: "dalchini", name: "Dalchini", en: "cinnamon", price: 5 },
+    { id: "kalimirch", name: "Kali mirch", en: "black pepper", price: 5 },
+    { id: "kesar", name: "Kesar", en: "saffron", price: 15 }
+  ];
+  var STRENGTH = [["Light", "हल्की"], ["Medium", "मीडियम"], ["Kadak", "कड़क"]];
+  var MILK = [["full", "Full milk", 0], ["less", "Less milk", 0], ["oat", "Oat milk", 10], ["none", "No milk", 0]];
+  $("optStrength").innerHTML = STRENGTH.map(function (s, i) { return '<label class="opt" for="st' + i + '"><input type="radio" name="strength" id="st' + i + '" value="' + i + '"' + (i === mix.strength ? " checked" : "") + '>' + s[0] + ' <small lang="hi">' + s[1] + '</small>' + (i === 2 ? ' <small>+₹5</small>' : '') + '</label>'; }).join("");
+  $("optMilk").innerHTML = MILK.map(function (m) { return '<label class="opt" for="mk-' + m[0] + '"><input type="radio" name="milk" id="mk-' + m[0] + '" value="' + m[0] + '"' + (m[0] === mix.milk ? " checked" : "") + '>' + m[1] + (m[2] ? ' <small>+₹' + m[2] + '</small>' : '') + '</label>'; }).join("");
+  $("optSpices").innerHTML = SPICES.map(function (s) { return '<label class="opt" for="sp-' + s.id + '"><input type="checkbox" id="sp-' + s.id + '" value="' + s.id + '"' + (mix.spices.indexOf(s.id) > -1 ? " checked" : "") + '>' + SPICE[s.id] + s.name + ' <small>' + s.en + ' · +₹' + s.price + '</small></label>'; }).join("");
+  $("optCup").innerHTML = [["kulhad", "Kulhad (clay cup)", 5], ["glass", "Cutting glass", 0]].map(function (c) { return '<label class="opt" for="cup-' + c[0] + '"><input type="radio" name="cup" id="cup-' + c[0] + '" value="' + c[0] + '"' + (c[0] === mix.cup ? " checked" : "") + '>' + c[1] + (c[2] ? ' <small>+₹' + c[2] + '</small>' : '') + '</label>'; }).join("");
+
+  var PH = "#abcdef", PH_TOP = mixHex(PH, "#FFFFFF", .18);
+  function cupMarkup(type) {
+    var raw = type === "kulhad" ? kulhad(PH, { steam: true }) : cuttingGlass(PH, { steam: true });
+    raw = inner(raw).split('fill="' + PH + '"').join('class="liquid" style="fill:' + PH + '"').split('fill="' + PH_TOP + '"').join('class="liquid-top" style="fill:' + PH_TOP + '"');
+    return type === "kulhad" ? '<g transform="translate(45 88) scale(2)">' + raw + '</g>' : '<g transform="translate(45 96) scale(2)">' + raw + '</g>';
+  }
+  var lastCup = null, lastSpices = [];
+  function mixPrice() {
+    var p = 20 + (mix.strength === 2 ? 5 : 0) + (mix.milk === "oat" ? 10 : 0) + (mix.cup === "kulhad" ? 5 : 0);
+    mix.spices.forEach(function (id) { p += SPICES.filter(function (s) { return s.id === id; })[0].price; });
+    return p;
+  }
+  function mixName() {
+    var sp = SPICES.filter(function (s) { return mix.spices.indexOf(s.id) > -1; }).map(function (s) { return s.name; });
+    var part = sp.length > 2 ? "Masala-Mix" : sp.length ? sp.join("-") : (mix.milk === "none" ? "Black" : "Doodh");
+    return STRENGTH[mix.strength][0] + " " + part + " Chai";
+  }
+  function mixDetail() {
+    var milk = { full: "Full milk", less: "Less milk", oat: "Oat milk", none: "No milk" }[mix.milk];
+    var sug = mix.sugar === 0 ? "no sugar" : mix.sugar + " spoon" + (mix.sugar > 1 ? "s" : "") + " sugar";
+    return milk + " · " + sug + " · in a " + (mix.cup === "kulhad" ? "kulhad" : "glass");
+  }
+  var pourT = 0;
+  function renderMix(pour) {
+    var col = chaiColor(mix.strength, mix.milk, mix.spices.indexOf("kesar") > -1);
+    if (lastCup !== mix.cup) { $("mixCup").innerHTML = cupMarkup(mix.cup); lastCup = mix.cup; }
+    requestAnimationFrame(function () {
+      $("mixCup").querySelectorAll(".liquid").forEach(function (el) { el.style.fill = col; });
+      $("mixCup").querySelectorAll(".liquid-top").forEach(function (el) { el.style.fill = mixHex(col, "#FFFFFF", .18); });
+    });
+    $("pstreamFill").setAttribute("stroke", col);
+    var cy = mix.cup === "kulhad" ? 162 : 196, sx = mix.cup === "kulhad" ? 1 : .8;
+    var spots = [[-36, -4], [-10, -8], [16, -4], [40, 0], [-22, 6], [6, 7]];
+    $("mixSpices").innerHTML = mix.spices.map(function (id, i) {
+      var p = spots[i % spots.length], isNew = lastSpices.indexOf(id) < 0;
+      return '<g transform="translate(' + (165 + p[0] * sx - 15) + ' ' + (cy + p[1] - 15) + ') scale(.75)"><g class="spice' + (isNew ? " new" : "") + '">' + inner(SPICE[id]) + '</g></g>';
+    }).join("");
+    lastSpices = mix.spices.slice();
+    var cubes = "";
+    for (var s = 0; s < mix.sugar; s++) cubes += '<g transform="translate(' + (262 + (s % 2) * 18) + ' ' + (286 - Math.floor(s / 2) * 18 - (s % 2) * 3) + ') rotate(' + (s * 9 - 6) + ')"><rect width="16" height="16" rx="3" fill="#FFFFFF" stroke="#1F1410" stroke-width="2.4"/><path d="M3 4 h4 M9 10 h4" stroke="#E6DCC8" stroke-width="2" stroke-linecap="round"/></g>';
+    $("mixSugar").innerHTML = cubes;
+    $("sugar").textContent = mix.sugar;
+    $("sugMinus").disabled = mix.sugar <= 0; $("sugPlus").disabled = mix.sugar >= 3;
+    $("spoonRow").innerHTML = [0, 1, 2].map(function (i) { return '<i class="' + (i < mix.sugar ? "on" : "") + '"></i>'; }).join("");
+    $("sugarWord").textContent = ["No sugar", "1 spoon", "2 spoons", "3 spoons, very sweet"][mix.sugar];
+    $("chaiName").textContent = mixName();
+    $("chaiDetail").textContent = mixDetail();
+    $("mixPrice").textContent = rupees(mixPrice());
+    $("mixQty").textContent = mix.qty;
+    $("mqMinus").disabled = mix.qty <= 1;
+    if (pour && !REDUCED) {
+      var svg = $("mixSvg"); svg.classList.add("pouring");
+      clearTimeout(pourT); pourT = setTimeout(function () { svg.classList.remove("pouring"); }, 750);
+    }
+  }
+  $("optStrength").addEventListener("change", function (e) { mix.strength = +e.target.value; renderMix(true); });
+  $("optMilk").addEventListener("change", function (e) { mix.milk = e.target.value; renderMix(true); });
+  $("optCup").addEventListener("change", function (e) { mix.cup = e.target.value; renderMix(true); });
+  $("optSpices").addEventListener("change", function () { mix.spices = SPICES.filter(function (s) { return $("sp-" + s.id).checked; }).map(function (s) { return s.id; }); renderMix(false); });
+  $("sugMinus").addEventListener("click", function () { mix.sugar = Math.max(0, mix.sugar - 1); renderMix(false); });
+  $("sugPlus").addEventListener("click", function () { mix.sugar = Math.min(3, mix.sugar + 1); renderMix(false); });
+  $("mqMinus").addEventListener("click", function () { mix.qty = Math.max(1, mix.qty - 1); renderMix(false); });
+  $("mqPlus").addEventListener("click", function () { mix.qty = Math.min(20, mix.qty + 1); renderMix(false); });
+  $("addMix").addEventListener("click", function () {
+    var key = "mix:" + [mix.strength, mix.milk, mix.sugar, mix.spices.join("+"), mix.cup].join("|");
+    var col = chaiColor(mix.strength, mix.milk, mix.spices.indexOf("kesar") > -1);
+    var art = mix.cup === "kulhad" ? kulhad(col, { steam: false }) : cuttingGlass(col, { steam: false });
+    var cur = cart[key] ? cart[key].qty : 0;
+    setQty(key, cur + mix.qty, { name: mixName(), detail: mixDetail(), price: mixPrice(), art: art });
+    toast("Added " + mix.qty + " × " + mixName());
+    mix.qty = 1; renderMix(false);
+  });
+  renderMix(false);
+
+  /* ---------- Order ---------- */
+  var PICKUP = [[15, "In 15 min"], [30, "In 30 min"], [60, "In 1 hour"]];
+  $("optPickup").innerHTML = PICKUP.map(function (p, i) { return '<label class="opt" for="pk' + i + '"><input type="radio" name="pickup" id="pk' + i + '" value="' + p[0] + '"' + (i === 0 ? " checked" : "") + '>' + p[1] + '</label>'; }).join("");
+  function renderOrder() {
+    var keys = Object.keys(cart);
+    if (!keys.length) {
+      $("lines").innerHTML = '<li class="empty">' + ART.cutting + '<b style="font-size:1.2rem">Your tray is empty</b><span style="color:var(--ink-soft)">Mix your own chai or pick something from the menu.</span><span class="ctas" style="justify-content:center"><a class="btn small" href="#mix">Mix your chai</a><a class="btn btn-paper small" href="#menu">See the menu</a></span></li>';
+    } else {
+      $("lines").innerHTML = keys.map(function (k) {
+        var c = cart[k];
+        return '<li class="line"><span class="mini">' + c.art + '</span><div><div class="nm">' + esc(c.name) + '</div><div class="dt">' + esc(c.detail) + ' · ' + rupees(c.price) + ' each</div></div>' +
+          '<div class="rt"><b>' + rupees(c.price * c.qty) + '</b><div class="qty"><button type="button" data-dec="' + esc(k) + '" aria-label="One fewer">−</button><output>' + c.qty + '</output><button type="button" data-inc="' + esc(k) + '" aria-label="One more">+</button></div></div></li>';
+      }).join("");
+    }
+    $("oTotal").textContent = rupees(total());
+    $("placeBtn").disabled = !keys.length;
+  }
+  function refreshAll() { renderMenus(); renderOrder(); refreshBadge(); }
+  $("oName").addEventListener("input", function () { if (!$("oNameErr").hidden) { $("oNameErr").hidden = true; $("oName").removeAttribute("aria-invalid"); } });
+  var lastOrderText = "";
+  $("checkout").addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (!count()) return;
+    var name = $("oName").value.trim();
+    if (!name) { $("oNameErr").hidden = false; $("oName").setAttribute("aria-invalid", "true"); $("oName").setAttribute("aria-describedby", "oNameErr"); $("oName").focus(); return; }
+    var mins = +document.querySelector('input[name="pickup"]:checked').value;
+    var ready = new Date(Date.now() + mins * 60000), closedNote = "";
+    var rm = ready.getHours() * 60 + ready.getMinutes();
+    if (rm < OPEN || rm >= CLOSE) {
+      var next = new Date(ready); if (rm >= CLOSE) next.setDate(next.getDate() + 1);
+      next.setHours(6, 15, 0, 0); ready = next;
+      closedNote = "The kettle is off right now, so ";
+    }
+    var dayWord = ready.toDateString() === new Date().toDateString() ? "" : " tomorrow";
+    var lines = Object.keys(cart).map(function (k) { var c = cart[k]; return c.qty + " × " + c.name + (k.indexOf("mix:") === 0 ? " (" + c.detail + ")" : "") + " · " + rupees(c.qty * c.price); });
+    lastOrderText = "Hi Kadak Kettle! Order for pickup at " + clock(ready) + dayWord + ":\n" + lines.join("\n") + "\nTotal: " + rupees(total()) + "\nName: " + name;
+    $("thanksTitle").textContent = "Thank you for ordering, " + name.split(" ")[0] + "!";
+    $("thanksMsg").textContent = (closedNote ? closedNote + "your" : "Your") + " chai will be hot and ready at " + clock(ready) + dayWord + ".";
+    $("thanksDl").innerHTML = "<dt>Name</dt><dd>" + esc(name) + "</dd><dt>Pickup</dt><dd>" + clock(ready) + dayWord + (closedNote ? " (first batch after opening)" : " (" + PICKUP.filter(function (p) { return p[0] === mins; })[0][1].toLowerCase() + ")") + "</dd><dt>Items</dt><dd>" + esc(lines.join("\n")) + "</dd><dt>Total</dt><dd>" + rupees(total()) + ", pay at the stall</dd>";
+    $("waBtn").href = "https://wa.me/?text=" + encodeURIComponent(lastOrderText);
+    cart = {}; refreshAll();
+    $("orderForm").hidden = true; $("thanks").hidden = false;
+    var t = $("thanks"); t.classList.remove("celebrate"); void t.offsetWidth; t.classList.add("celebrate");
+    toTop(); t.focus({ preventScroll: true });
+  });
+  $("copyOrder").addEventListener("click", function () { copyText(lastOrderText, this, "Copy order", null); });
+
+  /* ---------- Visit ---------- */
+  (function () {
+    var now = new Date(), d = now.getDay(), n = now.getHours() * 60 + now.getMinutes();
+    $("hoursBody").innerHTML = [1, 2, 3, 4, 5, 6, 0].map(function (i) { return '<tr' + (i === d ? ' class="today"' : '') + '><th>' + DAYS[i] + '</th><td>6:00 am – 11:00 pm</td></tr>'; }).join("");
+    var open = n >= OPEN && n < CLOSE, pill = $("statusPill");
+    pill.textContent = open ? "Kettle's on · until 11 pm" : "Closed · opens 6 am";
+    if (open) pill.classList.add("on");
+    var RUSH = [3, 5, 8, 9, 6, 4, 4, 5, 4, 3, 4, 6, 9, 10, 8, 6, 3];
+    var hr = now.getHours();
+    $("rush").innerHTML = RUSH.map(function (v, i) { var cls = (i + 6 === hr && open) ? "now" : v >= 8 ? "peak" : ""; return '<i class="' + cls + '" style="height:' + (v * 10) + '%" title="' + ((i + 6) % 12 || 12) + (i + 6 < 12 ? " am" : " pm") + '"></i>'; }).join("");
+  })();
+
+  /* ---------- Copy ---------- */
+  function copyText(text, btn, label, el) {
+    function fallback() { if (el) { var r = document.createRange(); r.selectNodeContents(el); var s = window.getSelection(); s.removeAllRanges(); s.addRange(r); } btn.textContent = el ? "Selected" : "Copy failed"; }
+    try { navigator.clipboard.writeText(text).then(function () { btn.textContent = "Copied!"; }, fallback); } catch (e) { fallback(); }
+    setTimeout(function () { btn.textContent = label; }, 2200);
+  }
+  document.querySelectorAll("[data-copy]").forEach(function (btn) { btn.addEventListener("click", function () { var el = $(btn.getAttribute("data-copy")); copyText(el.textContent, btn, "Copy", el); }); });
+
+  /* ---------- Router + intro ---------- */
+  var SCREENS = ["home", "mix", "menu", "order", "visit"], cur = null, entered = false, intro = $("intro");
+  function toTop() { try { window.scrollTo(0, 0); } catch (e) {} try { $("pageTop").scrollIntoView({ block: "start" }); } catch (e) {} }
+  function route(name) {
+    var h = typeof name === "string" ? name : (location.hash || "").replace("#", "");
+    var screen = SCREENS.indexOf(h) > -1 ? h : "home";
+    if (screen === "order" && cur !== "order" && !$("thanks").hidden && count()) { $("thanks").hidden = true; $("orderForm").hidden = false; }
+    if (screen === "order" && !$("thanks").hidden && cur !== "order") { $("thanks").hidden = true; $("orderForm").hidden = false; }
+    SCREENS.forEach(function (s) { $("screen-" + s).hidden = s !== screen; });
+    document.querySelectorAll("[data-nav]").forEach(function (a) { if (a.getAttribute("data-nav") === screen) a.setAttribute("aria-current", "page"); else a.removeAttribute("aria-current"); });
+    cur = screen; toTop();
+  }
+  function navigate(name) { try { if (location.hash !== "#" + name) history.pushState(null, "", "#" + name); } catch (e) {} route(name); }
+  function enter() {
+    if (entered) return; entered = true;
+    intro.classList.add("leaving"); document.body.style.overflow = "";
+    setTimeout(function () { intro.hidden = true; }, REDUCED ? 0 : 560);
+  }
+  $("enterBtn").addEventListener("click", function () { enter(); route(); });
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest('a[href^="#"]');
+    if (!a || e.button !== 0 || e.metaKey || e.ctrlKey) return;
+    var name = a.getAttribute("href").slice(1); if (!name) return;
+    e.preventDefault();
+    if (!entered) { entered = true; intro.hidden = true; document.body.style.overflow = ""; }
+    $("toast").classList.remove("show");
+    navigate(name);
+  });
+  window.addEventListener("popstate", function () { route(); });
+  window.addEventListener("hashchange", function () { if (!entered) { entered = true; intro.hidden = true; document.body.style.overflow = ""; } route(); });
+
+  refreshAll();
+  $("badge").classList.remove("bump");
+  if (location.hash && location.hash.length > 1) { entered = true; intro.hidden = true; route(); }
+  else { document.body.style.overflow = "hidden"; route("home"); setTimeout(function () { $("enterBtn").classList.add("ready"); }, REDUCED ? 0 : 1900); }
+})();
+
+</script>
+
+</body></html>
